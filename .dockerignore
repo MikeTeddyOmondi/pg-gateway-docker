@@ -1,0 +1,14 @@
+node_modules
+dist
+lib
+logs
+pglite-data
+
+npm-debug.log
+.git
+.gitignore
+.env
+*.md
+.DS_Store
+tests
+coverage
