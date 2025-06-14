@@ -8,6 +8,8 @@ import { log } from "./utils.js";
 const db = new PGlite({ dataDir: join(import.meta.dirname, "..", "pglite-data") });
 
 const server = net.createServer(async (socket) => {
+  log.info("Received client connection...");
+  
   await fromNodeSocket(socket, {
     serverVersion: "16.3 (PGlite 0.2.0)",
 
